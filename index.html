@@ -1,16 +1,18 @@
+Verdiğiniz detaylı metni mevcut HTML yapınıza sadık kalarak, tüm hukuki maddeleri ve teknik açıklamaları kapsayacak şekilde güncelledim. Bu sürüm, hem KVKK uyumluluğunu hem de App Store'un gizlilik politikası gereksinimlerini (hesap silme, veri imhası vb.) tam olarak karşılamaktadır.
 <!DOCTYPE html>
 <html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - PhotoDerm Clinic</title>
+    <title>Aydınlatma Metni ve Gizlilik Politikası - PhotoDerm</title>
     <style>
         :root {
             --primary-color: #007AFF;
             --text-color: #1d1d1f;
             --bg-color: #f5f5f7;
             --card-bg: #ffffff;
+            --accent-bg: #f0f7ff;
         }
 
         body {
@@ -23,8 +25,8 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 850px;
+            margin: 20px auto;
             background: var(--card-bg);
             padding: 40px;
             border-radius: 20px;
@@ -36,26 +38,42 @@
             border-bottom: 2px solid var(--bg-color);
             padding-bottom: 10px;
             font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
         }
 
         h2 {
             color: var(--primary-color);
             font-size: 20px;
             margin-top: 30px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin-top: 20px;
+            color: #333;
         }
 
         .update-date {
             color: #86868b;
             font-size: 14px;
+            text-align: center;
             margin-bottom: 30px;
         }
 
         .highlight-box {
-            background-color: #f0f7ff;
-            border-left: 4px solid var(--primary-color);
+            background-color: var(--accent-bg);
+            border: 1px solid #d0e3ff;
+            border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
-            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .highlight-box strong {
+            color: #d93025; /* Uyarı tonu */
         }
 
         ul {
@@ -63,23 +81,45 @@
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .contact-info {
             background: #f9f9f9;
-            padding: 15px;
+            padding: 20px;
             border-radius: 10px;
             list-style: none;
+            border: 1px solid #eee;
+        }
+
+        .contact-info li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
         }
 
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
+                margin: 0;
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
     </style>
@@ -87,61 +127,71 @@
 
 <body>
     <div class="container">
-        <h1>PHOTODERM CLINIC AYDINLATMA METNİ VE GİZLİLİK POLİTİKASI</h1>
+        <h1>PHOTODERM UYGULAMASI AYDINLATMA METNİ VE GİZLİLİK POLİTİKASI</h1>
         <p class="update-date">Son Güncelleme: 21 Mayıs 2026</p>
 
         <div class="highlight-box">
-            <strong>ÖNEMLİ HUKUKİ AÇIKLAMA:</strong> Uygulama, dermatolojik vaka ve hasta takibini kolaylaştırmak
-            amacıyla tasarlanmış teknik bir altyapı sunmaktadır. Uygulamaya girişini yaptığınız hastalarınıza ait sağlık
-            verileri ve görseller bakımından "Veri Sorumlusu" sıfatı tarafınıza (Kullanıcı Hekim) aittir. PhotoDerm
-            Clinic geliştiricileri bu verilere erişemez.
+            <strong>ÖNEMLİ HUKUKİ AÇIKLAMA:</strong> Uygulama, dermatolojik vaka ve hasta takibini kolaylaştırmak amacıyla tasarlanmış teknik bir altyapı (Local-First ve Uçtan Uca Şifreli vaka paylaşım aracı) sunmaktadır. Uygulamaya girişini yaptığınız hastalarınıza ait sağlık verileri ve görseller bakımından, hastalarınız ile aranızdaki hekimlik sözleşmesi kapsamında <strong>"Veri Sorumlusu"</strong> sıfatı tarafınıza (Kullanıcı Hekim/Sağlık Personeli) aittir. PhotoDerm uygulaması ve geliştiricileri, bu verilere hiçbir koşulda erişememekte ve bu verileri kendi sunucularında işlememektedir.
         </div>
 
         <h2>1. Veri Sorumlusu</h2>
-        <p>6698 sayılı KVKK uyarınca, veri sorumlusu sıfatıyla aşağıdaki kurum/şahıs tarafından işlenebilecektir:</p>
+        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) ve ilgili mevzuat uyarınca, PhotoDerm mobil uygulaması kapsamında işlenen kişisel verileriniz; veri sorumlusu sıfatıyla <strong>PhotoDerm Clinic</strong> tarafından aşağıda açıklanan kapsamda işlenebilecektir.</p>
         <ul class="contact-info">
-            <li><strong>Şirket/Hekim:</strong> PhotoDerm Clinic</li>
-            <li><strong>Adres:</strong> www.photodermclinic.com</li>
-            <li><strong>E-posta:</strong> photodermclinic@gmail.com</li>
-            <li><strong>X:</strong> <a href="https://x.com/PhotodermC90789" target="_blank">https://x.com/PhotodermC90789</a></li>
+            <li><strong>Web:</strong> <a href="https://www.photodermclinic.com" target="_blank">www.photodermclinic.com</a></li>
+            <li><strong>E-posta:</strong> <a href="mailto:photodermclinic@gmail.com">photodermclinic@gmail.com</a></li>
+            <li><strong>X (Twitter):</strong> <a href="https://x.com/PhotodermC90789" target="_blank">@PhotodermC90789</a></li>
         </ul>
 
         <h2>2. İşlenen Kişisel Veriler ve İşleme Amaçları</h2>
-        <h3>A. Kullanıcıya (Hekim) Ait Veriler:</h3>
+        <p>Uygulama kullanımı boyunca aşağıdaki kategorilerdeki kişisel verileriniz işlenmektedir:</p>
+
+        <h3>A. Kullanıcıya (Hekim/Sağlık Personeli) Ait Veriler:</h3>
         <ul>
-            <li>Hesap ve İletişim Bilgileri (Ad-Soyad, E-posta, Branş)</li>
-            <li>Ödeme ve Abonelik Bilgileri (App Store altyapısı üzerinden)</li>
+            <li><strong>Hesap ve İletişim Bilgileri:</strong> Uygulama kaydı ve kimlik doğrulama için kullanılan Ad-Soyad, E-posta adresi, Hekimlik Branşı/Uzmanlık Alanı.</li>
+            <li><strong>Ödeme ve Abonelik Bilgileri:</strong> App Store üzerinden gerçekleştirilen satın alma ve abonelik işlemleriyle ilgili fatura ve işlem detayları (bu veriler doğrudan Apple App Store altyapısında işlenir).</li>
         </ul>
 
-        <h3>B. Hastalara Ait Veriler:</h3>
+        <h3>B. Hastalara Ait Veriler (Kullanıcı Hekim Tarafından Girilen):</h3>
         <ul>
-            <li>Hasta Kimlik Bilgileri (Ad-Soyad, Doğum Tarihi, Cinsiyet)</li>
-            <li>Özel Nitelikli Sağlık Verileri (Cilt lezyon fotoğrafları, klinik notlar, teşhis kayıtları)</li>
+            <li><strong>Hasta Kimlik Bilgileri:</strong> Ad-Soyad, Doğum Tarihi, Cinsiyet.</li>
+            <li><strong>Özel Nitelikli Kişisel Veriler (Sağlık Bilgileri):</strong> Cilt lezyon fotoğrafları, dermatolojik takip görselleri, klinik notlar, lezyon bölge haritaları, teşhis ve tedaviye yönelik tıbbi kayıtlar.</li>
         </ul>
 
-        <h2>3. Toplanma Yöntemi ve Hukuki Sebep</h2>
-        <p>Veriler, Kullanıcı Hekim tarafından manuel veri girişiyle toplanır. Hukuki sebeplerimiz:</p>
+        <p><strong>İşleme Amaçları:</strong></p>
         <ul>
-            <li>Hekim verileri için sözleşmenin ifası (KVKK m. 5/2-c).</li>
-            <li>Hasta verileri için hekim-hasta tedavi sözleşmesi ve alınan <strong>Açık Rıza</strong>.</li>
+            <li>Klinik vaka kayıtlarının dijital ortamda düzenli, güvenli ve sistematik şekilde oluşturulması.</li>
+            <li>Hastaların dermatolojik lezyon süreçlerinin "Ghost Kamera" ve karşılaştırma özellikleri ile takibi.</li>
+            <li>Mesleki dayanışma amacıyla diğer uzman hekimler ile <code>.pderm</code> uzantılı paketler üzerinden şifreli vaka paylaşımı.</li>
+            <li>Uygulama içi abonelik süreçlerinin yürütülmesi ve lisans kontrolü.</li>
         </ul>
 
-        <h2>4. Veri Saklama ve Güvenlik Protokolleri</h2>
+        <h2>3. Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebebi</h2>
+        <p>Kişisel verileriniz, tamamen Kullanıcı Hekim'in kendi beyanına dayalı manuel girişiyle toplanır.</p>
+        <p><strong>Hukuki Sebepler:</strong></p>
         <ul>
-            <li><strong>Yerel Depolama (AES-256):</strong> Tüm veriler cihazda şifreli olarak saklanır.</li>
-            <li><strong>iCloud Yedeklemesi:</strong> Kullanıcı kontrolünde şifreli yedekleme.</li>
-            <li><strong>Uçtan Uca Şifreleme (E2EE):</strong> Vaka paylaşımı sırasında veriler sadece alıcı tarafından
-                çözülebilir.</li>
-            <li><strong>Yurt Dışına Aktarım:</strong> iCloud kullanımı, Apple App Store servis altyapısı ve anonim kullanım metriklerinin Mixpanel Inc. (ABD) sunucularına gönderilebilmesi sebebiyle verileriniz yurt dışına aktarılmış sayılabilir. Bu analitik metrikler doğrudan kimliklendirici kişisel veri (PII) içermez (yalnızca cihaz tipi, OS sürümü, anonim kullanıcı kimliği).</li>
+            <li><strong>Hekim Verileri İçin:</strong> Bir sözleşmenin kurulması veya ifası (KVKK m. 5/2-c).</li>
+            <li><strong>Hasta Verileri İçin:</strong> Hekim ile hasta arasındaki tedavi sözleşmesi ve kullanıcının hastasından aldığı <strong>“Açık Rıza”</strong> (KVKK m. 6/2).</li>
+        </ul>
+
+        <h2>4. Veri Saklama, Güvenlik ve Altyapı Protokolleri</h2>
+        <p>PhotoDerm, "Local-First" (Önce Yerel) mimarisi kullanır:</p>
+        <ul>
+            <li><strong>Yerel Depolama (AES-256):</strong> Tüm veriler cihazda AES-256 standardıyla şifrelenmiş bir veritabanında saklanır.</li>
+            <li><strong>iCloud Yedeklemesi:</strong> Kullanıcı tercihine bağlı olarak, veriler sadece kullanıcının şahsi iCloud hesabında şifreli yedeklenir.</li>
+            <li><strong>Uçtan Uca Şifreli Vaka Paylaşımı (E2EE):</strong> Paylaşılan vakalar cihazda <code>AES-GCM</code> ile şifrelenir; sunucularımız içeriğe erişemez.</li>
+            <li><strong>Yurt Dışına Aktarım:</strong> iCloud, App Store servisleri ve anonim kullanım metrikleri (Mixpanel Inc. - ABD) kullanımı nedeniyle veriler yurt dışına aktarılmış sayılabilir. Analitik metrikler kimlik bilgisi (PII) içermez.</li>
         </ul>
 
         <h2>5. Hesap Silme ve Verilerin İmhası</h2>
-        <p>Ayarlar ekranından dilediğiniz an hesabınızı ve verilerinizi kalıcı olarak silebilirsiniz. Silme işlemi
-            sonrasında veriler kriptografik olarak imha edilir.</p>
+        <p>Veri gizliliğinizi kontrol etme hakkınız saklıdır:</p>
+        <ul>
+            <li><strong>Hesap ve Veri Silme:</strong> Ayarlar ekranından dilediğiniz an hesabınızı ve yerel verilerinizi silebilirsiniz.</li>
+            <li><strong>Kalıcı İmha:</strong> Silme işlemiyle veriler kriptografik olarak imha edilir ve geri döndürülemez.</li>
+        </ul>
 
         <h2>6. İlgili Kişinin Hakları (KVKK Madde 11)</h2>
-        <p>Veri sahibi olarak; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini isteme
-            haklarına sahipsiniz. Taleplerinizi yukarıdaki iletişim e-postasına iletebilirsiniz.</p>
+        <p>KVKK uyarınca; verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini isteme, silinmesini talep etme ve otomatik sistemlerle yapılan analize itiraz etme haklarına sahipsiniz.</p>
+        <p>Başvurularınızı <strong>photodermclinic@gmail.com</strong> adresine iletebilirsiniz.</p>
     </div>
 </body>
 
